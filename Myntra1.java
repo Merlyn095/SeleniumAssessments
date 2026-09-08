@@ -21,7 +21,10 @@ public class Myntra1 {
 	        driver.findElement(By.xpath("//div[@class='product-imageSliderContainer']"));
 	        Thread.sleep(5000);
 	        driver.findElement(By.xpath("//span[@class='product-wishlistFlex product-actionsButton product-wishlist ']")).click();
-	        
+	        String text=driver.getTitle();
+	        if(text.equals("Myntra")) {
+	        	System.out.println("Product added to wishlist");
+	        }
 	        Thread.sleep(2000);
 	        driver.quit();
 		
