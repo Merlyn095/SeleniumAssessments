@@ -13,6 +13,7 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import DAY8.OrangeCandidatesPage;
 import DAY8.OrangeHomePage;
 import DAY8.OrangeLoginPage;
 import DAY8.OrangeRecruitmentPage;
@@ -22,7 +23,7 @@ public class OrangeHRM {
     public static void main(String[] args) throws Exception {
 
         // Read properties file
-        FileInputStream fis = new FileInputStream("./src/test/resources/DAY6/TestCase01.properties");
+        FileInputStream fis = new FileInputStream("./src/test/resources/Day8/Orange.properties");
         Properties prop = new Properties();
         prop.load(fis);
 
@@ -55,7 +56,7 @@ public class OrangeHRM {
         recruitmentPage.clickAdd();
 
         // Read Excel
-        FileInputStream excelFis = new FileInputStream("./src/test/resources/DAY8/TestCase001.xlsx");
+        FileInputStream excelFis = new FileInputStream("./src/test/resources/Day8/TestCase001.xlsx");
         Workbook workbook = WorkbookFactory.create(excelFis);
         Sheet sheet = workbook.getSheet("Sheet1");
         Row row = sheet.getRow(1);
@@ -143,3 +144,4 @@ public class OrangeHRM {
         driver.quit();
     }
 }
+
