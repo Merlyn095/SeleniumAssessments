@@ -118,8 +118,8 @@ public class OrangeCandidatesPage {
         candidateNameTextField.click();
 
         // Clear field
-        candidateNameTextField.sendKeys(Keys.CONTROL, "a");
-        candidateNameTextField.sendKeys(Keys.BACK_SPACE);
+        candidateNameTextField.sendKeys(Keys.COMMAND, "a");
+        candidateNameTextField.sendKeys(Keys.DELETE);
 
         // OrangeHRM autocomplete searches using first name
         String firstName = candidateName.trim().split("\\s+")[0];
@@ -178,8 +178,8 @@ public class OrangeCandidatesPage {
     // ENTER FROM DATE
     public void enterFromDate(String fromDate) {
         fromDateTextField.click();
-        fromDateTextField.sendKeys(Keys.CONTROL, "a");
-        fromDateTextField.sendKeys(Keys.BACK_SPACE);
+        fromDateTextField.sendKeys(Keys.COMMAND, "a");
+        fromDateTextField.sendKeys(Keys.DELETE);
         fromDateTextField.sendKeys(fromDate);
         fromDateTextField.sendKeys(Keys.ESCAPE);
 
@@ -189,8 +189,8 @@ public class OrangeCandidatesPage {
     // ENTER TO DATE
     public void enterToDate(String toDate) {
         toDateTextField.click();
-        toDateTextField.sendKeys(Keys.CONTROL, "a");
-        toDateTextField.sendKeys(Keys.BACK_SPACE);
+        toDateTextField.sendKeys(Keys.COMMAND, "a");
+        toDateTextField.sendKeys(Keys.DELETE);
         toDateTextField.sendKeys(toDate);
         toDateTextField.sendKeys(Keys.ESCAPE);
 
