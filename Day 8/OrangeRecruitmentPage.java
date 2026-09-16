@@ -158,11 +158,11 @@ public class OrangeRecruitmentPage {
 
         // Select existing date
         applicationDateTextField.sendKeys(
-                Keys.CONTROL, "a");
+                Keys.COMMAND, "a");
 
         // Delete existing date
         applicationDateTextField.sendKeys(
-                Keys.BACK_SPACE);
+                Keys.DELETE);
 
         // Enter new date
         applicationDateTextField.sendKeys(date);
