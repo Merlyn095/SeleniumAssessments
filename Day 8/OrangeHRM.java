@@ -13,6 +13,10 @@ import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import DAY8.OrangeHomePage;
+import DAY8.OrangeLoginPage;
+import DAY8.OrangeRecruitmentPage;
+
 public class OrangeHRM {
 
     public static void main(String[] args) throws Exception {
